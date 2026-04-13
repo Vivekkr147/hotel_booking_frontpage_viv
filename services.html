@@ -5,7 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services | Grand Horizon Hotel</title>
     <link rel="stylesheet" href="style.css">
-    
+</head>
+<body>
+
+    <nav style="background: #333; position: relative;">
+        <div class="logo">Grand Horizon</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="room.html">Rooms</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Booking</a></li>
+        </ul>
+    </nav>
+
+    <div class="services-container">
+        <div class="service-header">
+            <h2>Luxury Services</h2>
+            <p>We provide world-class amenities for a memorable stay.</p>
+        </div>
+
+        <div class="service-row">
+            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600" alt="Events" class="service-image">
+            <div class="service-content">
+                <h3>Event & Wedding Planning</h3>
+                <p>From corporate seminars to grand weddings, our banquet halls are equipped with the latest technology and elegant decor to make your event unforgettable.</p>
+                <ul class="facilities-list">
+                    <li>Capacity up to 500 guests</li>
+                    <li>Professional Catering Service</li>
+                    <li>AV & Sound Systems</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-row">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="Dining" class="service-image">
+            <div class="service-content">
+                <h3>Fine Dining & Cuisine</h3>
+                <p>Experience authentic flavors prepared by our world-renowned chefs. We offer 24/7 room service and a multi-cuisine restaurant.</p>
+                
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <span>Continental Breakfast</span>
+                        <span class="price">₹499</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Indian Thali (Special)</span>
+                        <span class="price">₹850</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Grilled Salmon</span>
+                        <span class="price">₹1200</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+<section class="pre-footer">
+    <div class="cta-overlay">
+        <h2>Want A ROOM ? Want A SEAT?</h2>
+        <p>You can book your room online or reserve a seat for dinner in our restaurant. So do not wait, book your room now!</p>
+        
+        <a href="booking.html" class="cta-book-btn">BOOK NOW</a>
+
+        <div class="contact-info-row">
+            <div class="info-item">
+                <span class="icon-circle">📞</span>
+                <span>+91-6206832599</span>
+            </div>
+            <div class="info-item">
+                <span class="icon-circle">📍</span>
+                <span>Behind Karmapa Temple, Bodhgaya-824231</span>
+            </div>
+            <div class="info-item">
+                <span class="icon-circle">✉️</span>
+                <span>info@grandhorizon.com</span>
+            </div>
+        </div>
+    </div>
+</section>
     <style>
         .services-container {
             padding: 80px 20px;
@@ -82,63 +161,78 @@
             font-weight: bold;
             color: #d4a373;
         }
+        /* Pre-Footer CTA Section */
+.pre-footer {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1551882547-ff43c63faf76?w=1350'); /* Use a dark hotel/statue image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.cta-overlay {
+    background: linear-gradient(to bottom, rgba(40, 10, 30, 0.8), rgba(0, 0, 0, 0.9));
+    padding: 80px 20px;
+}
+
+.cta-overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.cta-overlay p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* Gold Outline Button */
+.cta-book-btn {
+    display: inline-block;
+    padding: 12px 40px;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin-bottom: 40px;
+}
+
+.cta-book-btn:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* Contact Info Row */
+.contact-info-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.icon-circle {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ffcc00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc00;
+}
     </style>
-</head>
-<body>
-
-    <nav style="background: #333; position: relative;">
-        <div class="logo">Grand Horizon</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="room.html">Rooms</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="services-container">
-        <div class="service-header">
-            <h2>Luxury Services</h2>
-            <p>We provide world-class amenities for a memorable stay.</p>
-        </div>
-
-        <div class="service-row">
-            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600" alt="Events" class="service-image">
-            <div class="service-content">
-                <h3>Event & Wedding Planning</h3>
-                <p>From corporate seminars to grand weddings, our banquet halls are equipped with the latest technology and elegant decor to make your event unforgettable.</p>
-                <ul class="facilities-list">
-                    <li>Capacity up to 500 guests</li>
-                    <li>Professional Catering Service</li>
-                    <li>AV & Sound Systems</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="service-row">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="Dining" class="service-image">
-            <div class="service-content">
-                <h3>Fine Dining & Cuisine</h3>
-                <p>Experience authentic flavors prepared by our world-renowned chefs. We offer 24/7 room service and a multi-cuisine restaurant.</p>
-                
-                <div class="menu-list">
-                    <div class="menu-item">
-                        <span>Continental Breakfast</span>
-                        <span class="price">₹499</span>
-                    </div>
-                    <div class="menu-item">
-                        <span>Indian Thali (Special)</span>
-                        <span class="price">₹850</span>
-                    </div>
-                    <div class="menu-item">
-                        <span>Grilled Salmon</span>
-                        <span class="price">₹1200</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="index.html" class="back-home">← Back to Home</a>
-    </div>
-
 </body>
 </html>

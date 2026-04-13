@@ -120,3 +120,160 @@ nav {
     text-decoration: none;
     font-size: 0.9rem;
 }
+
+/* Overview Section Styling */
+.overview {
+    padding: 80px 10%;
+    background-color: #fff;
+}
+
+.overview-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap; /* Helps with mobile responsiveness */
+}
+
+.overview-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.overview-text h2 {
+    color: #d4a373;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.overview-text h3 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.overview-text p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Stats Row */
+.stats {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stat-item span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    color: #999;
+    margin: 0;
+}
+
+/* Overview Image */
+.overview-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.overview-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 20px 20px 0px #f0e6d2; /* Stylish offset background shadow */
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid #333;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #333;
+    color: #fff;
+}
+/* Pre-Footer CTA Section */
+.pre-footer {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1551882547-ff43c63faf76?w=1350'); /* Use a dark hotel/statue image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.cta-overlay {
+    background: linear-gradient(to bottom, rgba(40, 10, 30, 0.8), rgba(0, 0, 0, 0.9));
+    padding: 80px 20px;
+}
+
+.cta-overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.cta-overlay p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* Gold Outline Button */
+.cta-book-btn {
+    display: inline-block;
+    padding: 12px 40px;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin-bottom: 40px;
+}
+
+.cta-book-btn:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* Contact Info Row */
+.contact-info-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.icon-circle {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ffcc00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc00;
+}

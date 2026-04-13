@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | Grand Horizon</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .booking-page {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1350');
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 80px 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .reservation-box {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+
+        .reservation-box h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .reservation-box p {
+            text-align: center;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #d4a373;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        .submit-booking {
+            background: #d4a373;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .submit-booking:hover {
+            background: #bc8a5f;
+        }
+
+        @media (max-width: 600px) {
+            .form-grid { grid-template-columns: 1fr; }
+            .full-width { grid-column: span 1; }
+        }
+        /* Pre-Footer CTA Section */
+.pre-footer {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1551882547-ff43c63faf76?w=1350'); /* Use a dark hotel/statue image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.cta-overlay {
+    background: linear-gradient(to bottom, rgba(40, 10, 30, 0.8), rgba(0, 0, 0, 0.9));
+    padding: 80px 20px;
+}
+
+.cta-overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.cta-overlay p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* Gold Outline Button */
+.cta-book-btn {
+    display: inline-block;
+    padding: 12px 40px;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin-bottom: 40px;
+}
+
+.cta-book-btn:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* Contact Info Row */
+.contact-info-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.icon-circle {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ffcc00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc00;
+}
+    </style>
+</head>
+<body>
+
+    <nav style="background: #333; position: relative;">
+        <div class="logo">Grand Horizon</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="room.html">Rooms</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Booking</a></li>
+        </ul>
+    </nav>
+
+    <div class="booking-page">
+        <div class="reservation-box">
+            <h2>Room Reservation</h2>
+            <p>Complete the form below to book your luxury stay.</p>
+
+            <form id="bookingForm" action="#">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>From Date</label>
+                        <input type="date" required id="fromDate">
+                    </div>
+                    <div class="form-group">
+                        <label>To Date</label>
+                        <input type="date" required id="toDate">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Room Type</label>
+                        <select required>
+                            <option value="">Select Room</option>
+                            <option>Deluxe Suite</option>
+                            <option>Executive Room</option>
+                            <option>Presidential Suite</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Room Requirement</label>
+                        <select>
+                            <option>Single Bed</option>
+                            <option>Double Bed</option>
+                            <option>Extra Bed Needed</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Adults</label>
+                        <input type="number" min="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label>Children</label>
+                        <input type="number" min="0" value="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Special Requirements / Requests</label>
+                        <textarea rows="4" placeholder="Any specific needs? (e.g., Airport pickup, Late check-in)"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-booking">Confirm Reservation</button>
+            </form>
+        </div>
+    </div>
+<section class="pre-footer">
+    <div class="cta-overlay">
+        <h2>Want A ROOM ? Want A SEAT?</h2>
+        <p>You can book your room online or reserve a seat for dinner in our restaurant. So do not wait, book your room now!</p>
+        
+        <a href="booking.html" class="cta-book-btn">BOOK NOW</a>
+
+        <div class="contact-info-row">
+            <div class="info-item">
+                <span class="icon-circle">📞</span>
+                <span>+91-6206832599</span>
+            </div>
+            <div class="info-item">
+                <span class="icon-circle">📍</span>
+                <span>Behind Karmapa Temple, Bodhgaya-824231</span>
+            </div>
+            <div class="info-item">
+                <span class="icon-circle">✉️</span>
+                <span>info@grandhorizon.com</span>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
