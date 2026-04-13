@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Grand Horizon Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .services-container {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .service-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .service-header h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        /* Service Row Layout */
+        .service-row {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 60px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .service-row:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .service-image {
+            flex: 1;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .service-content {
+            flex: 1;
+        }
+
+        .service-content h3 {
+            color: #d4a373;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .service-content p {
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Simple Menu List for Food Section */
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 5px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #d4a373;
+        }
+    </style>
+</head>
+<body>
+
+    <nav style="background: #333; position: relative;">
+        <div class="logo">Grand Horizon</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="room.html">Rooms</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="services-container">
+        <div class="service-header">
+            <h2>Luxury Services</h2>
+            <p>We provide world-class amenities for a memorable stay.</p>
+        </div>
+
+        <div class="service-row">
+            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600" alt="Events" class="service-image">
+            <div class="service-content">
+                <h3>Event & Wedding Planning</h3>
+                <p>From corporate seminars to grand weddings, our banquet halls are equipped with the latest technology and elegant decor to make your event unforgettable.</p>
+                <ul class="facilities-list">
+                    <li>Capacity up to 500 guests</li>
+                    <li>Professional Catering Service</li>
+                    <li>AV & Sound Systems</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-row">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="Dining" class="service-image">
+            <div class="service-content">
+                <h3>Fine Dining & Cuisine</h3>
+                <p>Experience authentic flavors prepared by our world-renowned chefs. We offer 24/7 room service and a multi-cuisine restaurant.</p>
+                
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <span>Continental Breakfast</span>
+                        <span class="price">₹499</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Indian Thali (Special)</span>
+                        <span class="price">₹850</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Grilled Salmon</span>
+                        <span class="price">₹1200</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+
+</body>
+</html>

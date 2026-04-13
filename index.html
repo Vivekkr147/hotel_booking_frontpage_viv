@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Horizon Hotel | Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Grand Horizon</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="room.html">Room</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Experience Luxury</h1>
+        <p>Your home away from home, refined and redefined.</p>
+
+        <div class="booking-container">
+            <div class="input-group">
+                <label>CHECK-IN</label>
+                <input type="date" id="checkin">
+            </div>
+            <div class="input-group">
+                <label>CHECK-OUT</label>
+                <input type="date" id="checkout">
+            </div>
+            <div class="input-group">
+                <label>GUESTS</label>
+                <select id="guests">
+                    <option selected>0 Guest</option>
+                    <option>1 Guest</option>
+                    <option >2 Guests</option>
+                    <option>3+ Guests</option>
+                </select>
+            </div>
+            <button class="book-btn" onclick="checkAvailability()">CHECK ROOMS</button>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+</html>

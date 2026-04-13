@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Rooms | Grand Horizon Hotel</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+        /* Specific Styles for Rooms Page */
+        .rooms-section {
+            padding: 100px 50px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .rooms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .room-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .room-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .room-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .room-info {
+            padding: 20px;
+        }
+
+        .room-info h3 {
+            margin-bottom: 10px;
+            color: #d4a373;
+        }
+
+        .facilities-list {
+            list-style: none;
+            margin: 15px 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .facilities-list li {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Small dot for facilities */
+        .facilities-list li::before {
+            content: "•";
+            color: #d4a373;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #d4a373;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav style="background: #333; position: relative;"> <div class="logo">Grand Horizon</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="room.html">Rooms</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="rooms-section">
+        <h2 class="section-title">Explore Our Luxury Rooms</h2>
+        
+        <div class="rooms-grid">
+            <div class="room-card">
+                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500" alt="Deluxe Room" class="room-img">
+                <div class="room-info">
+                    <h3>Deluxe Suite</h3>
+                    <p>Perfect for solo travelers or couples.</p>
+                    <ul class="facilities-list">
+                        <li>King Size Bed</li>
+                        <li>High-speed WiFi</li>
+                        <li>24/7 Room Service</li>
+                        <li>Mini Bar</li>
+                    </ul>
+                    <strong>₹4,500 / Night</strong>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500" alt="Executive Room" class="room-img">
+                <div class="room-info">
+                    <h3>Executive Room</h3>
+                    <p>Designed for business and comfort.</p>
+                    <ul class="facilities-list">
+                        <li>Smart Work Desk</li>
+                        <li>Ocean View Balcony</li>
+                        <li>Coffee Maker</li>
+                        <li>Complimentary Breakfast</li>
+                    </ul>
+                    <strong>₹7,200 / Night</strong>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=500" alt="Presidential Suite" class="room-img">
+                <div class="room-info">
+                    <h3>Presidential Suite</h3>
+                    <p>The ultimate luxury experience.</p>
+                    <ul class="facilities-list">
+                        <li>Private Jacuzzi</li>
+                        <li>Personal Butler</li>
+                        <li>Master Kitchen</li>
+                        <li>Premium Bar Access</li>
+                    </ul>
+                    <strong>₹15,000 / Night</strong>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+
+</body>
+</html>
