@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Horizon Hotel | Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Grand Horizon</div>
+        <ul class="nav-links">
+            <li><a href="front.html">Home</a></li>
+            <li><a href="room.html">Room</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Experience Luxury</h1>
+        <p>Your home away from home, refined and redefined.</p>
+
+        <div class="booking-container">
+            <div class="input-group">
+                <label>CHECK-IN</label>
+                <input type="date" id="checkin">
+            </div>
+            <div class="input-group">
+                <label>CHECK-OUT</label>
+                <input type="date" id="checkout">
+            </div>
+            <div class="input-group">
+                <label>GUESTS</label>
+                <select id="guests">
+                    <option selected>0 Guest</option>
+                    <option>1 Guest</option>
+                    <option >2 Guests</option>
+                    <option>3+ Guests</option>
+                </select>
+            </div>
+            <button class="check-btn" onclick="checkAvailability()">CHECK ROOMS</button>
+        </div>
+    </header>
+    <section class="overview">
+    <div class="overview-content">
+        <div class="overview-text">
+            <h2>Welcome to Grand Horizon</h2>
+            <h3>A Legacy of Luxury Since 1995</h3>
+            <p>
+                A Symbol of Unique architecture, Grand Horizon Hotel stands tall behind Karmapa 
+                Mandir in Bodhgaya "The World Heritage" site. The hotel caters to the diversified
+                needs of tourists from France, Thailand, Taiwan, Sri Lanka, Korea, China, Japan 
+                and other International tourists as well as domestic leisure travelers. Bodhgaya 
+                is unique for its Buddhist pilgrimage tours. The Hotel has 27 A/C rooms with all 
+                the modern amenities. "Grand Horizon Hotel" Restaurant serves Indian, Chinese, Continental, 
+                Tandoori, Thai food and much more...! In order to provide comfort to our esteemed guests,
+                the entire hotel has been specially designed to cater various needs. Furniture, 
+                Restaurant, Room Service, Bathrooms and all other amenities are desinged to meet
+                the customer needs.
+            </p>
+            <div class="stats">
+                <div class="stat-item">
+                    <span>200+</span>
+                    <p>Luxury Rooms</p>
+                </div>
+                <div class="stat-item">
+                    <span>15+</span>
+                    <p>Years Excellence</p>
+                </div>
+                <div class="stat-item">
+                    <span>5</span>
+                    <p>Global Awards</p>
+                </div>
+            </div>
+            <a href="rooms.html" class="btn-secondary">Explore More</a>
+        </div>
+        <div class="overview-image">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600" alt="Hotel Interior">
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+<section class="hotel-rooms">
+    <h2 class="section-title">Hotel Rooms</h2>
+
+    <div class="rooms-container">
+
+        <!-- Room 1 -->
+        <div class="room-card">
+            <div class="room-img">
+                <img src="https://hotelbodhvilas.com/assets/images/rm_deluxe.jpg" alt="Deluxe Room">
+                <a href="booking.html" class="book-btn">BOOK NOW</a>
+            </div>
+            <div class="room-content">
+                <h3>Deluxe Rooms</h3>
+                <p>Our central location provides an ideal base to the visitors and the Pilgrims.</p>
+                <div class="stars">★★★</div>
+            </div>
+        </div>
+
+        <!-- Room 2 -->
+        <div class="room-card">
+            <div class="room-img">
+                <img src="https://hotelbodhvilas.com/assets/images/rm_Superior.jpg" alt="Superior Room">
+                <a href="booking.html" class="book-btn ">BOOK NOW</a>
+            </div>
+            <div class="room-content">
+                <h3>Superior Rooms</h3>
+                <p>We offer a peaceful and relaxing environment away from the stress of modern life.</p>
+                <div class="stars">★★★</div>
+            </div>
+        </div>
+
+        <!-- Room 3 -->
+        <div class="room-card">
+            <div class="room-img">
+                <img src="https://hotelbodhvilas.com/assets/images/rm_vilassuite.jpg" alt="Vilas Suite">
+                <a href="booking.html" class="book-btn">BOOK NOW</a>
+            </div>
+            <div class="room-content">
+                <h3>Vilas Suite</h3>
+                <p>The hotel offers the kind of personal, attentive service and desirable amenities.</p>
+                <div class="stars">★★★</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="hotel-service">
+    <div class="section-header">
+        <p class="sub-title">Luxurious Service</p>
+        <h2>Hotel Service</h2>
+    </div>
+
+    <div class="service-grid">
+        <div class="grid-item">
+           <img src="https://hotelbodhvilas.com/assets/images/service_img1.jpg" alt="">
+           <div class="image_detail">
+            <h3>MAHABODHI TEMPLE</h3>
+            <p>Guide Services</p>
+           </div> 
+        </div>
+        <div class="grid-item">
+            <img src="https://hotelbodhvilas.com/assets/images/service_img2.jpg" alt="">
+            <div class="image_detail">
+            <h3>RESTAURANT</h3>
+            <p>Group Dining</p>
+           </div> 
+        </div>
+        <div class="grid-item">
+            <img src="https://hotelbodhvilas.com/assets/images/service_img3.jpg" alt="">
+            <div class="image_detail">
+            <h3>TRAVEL DESK</h3>
+            <p>One Stop Tour Desk</p>
+           </div> 
+        </div>
+        <div class="grid-item">
+            <img src="https://hotelbodhvilas.com/assets/images/service_img5.jpg" alt="">
+            <div class="image_detail">
+            <h3>LAUNDRY SERVICES</h3>
+            <p>Daily Cleaning Jobs</p>
+           </div> 
+        </div>
+        <div class="grid-item">
+            <img src="https://hotelbodhvilas.com/assets/images/service_img7.jpg" alt="">
+            <div class="image_detail">
+            <h3>DOCTOR ON CALL</h3>
+            <p>Doctor available in need</p>
+           </div> 
+        </div>
+        <div class="grid-item">
+            <img src="https://hotelbodhvilas.com/assets/images/service_img8.jpg" alt="">
+            <div class="image_detail">
+            <h3>WIFI/INTERNET</h3>
+            <p>Free Internet Available</p>
+           </div> 
+        </div>
+    </div>
+</section>
+<section class="pre-footer">
+    <div class="cta-overlay">
+        <h2>Want A ROOM ? Want A SEAT?</h2>
+        <p>You can book your room online or reserve a seat for dinner in our restaurant. So do not wait, book your room now!</p>
+        
+        <a href="booking.html" class="cta-book-btn">BOOK NOW</a>
+
+        <div class="contact-info-row">
+            <div class="info-item">
+                <span class="icon-circle">📞</span>
+                <span>+91-6206832599</span>
+            </div>
+            <div class="info-item">
+                <span class="icon-circle">📍</span>
+                <span>Behind Karmapa Temple, Bodhgaya-824231</span>
+            </div>
+            <div class="info-item">
+                <span class="icon-circle">✉️</span>
+                <span>info@grandhorizon.com</span>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
