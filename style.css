@@ -414,3 +414,43 @@ nav {
     color: #f4b400;
     font-size: 18px;
 }
+
+/* --- Desktop: Hide the menu toggle --- */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+/* --- Mobile Rules --- */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Show the button on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Keep it hidden by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust based on your nav height */
+        left: 0;
+        width: 100%;
+        background-color: rgba(75, 69, 69, 0.95);
+        padding: 21px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    /* This class will be added by JavaScript */
+    .nav-links.active {
+        display: flex; 
+    }
+}

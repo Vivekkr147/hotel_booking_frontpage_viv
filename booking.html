@@ -8,15 +8,20 @@
     
 </head>
 <body>
-
+    
     <nav style="background: #333; position: relative;">
         <div class="logo">Grand Horizon</div>
-        <ul class="nav-links">
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-list">
             <li><a href="front.html">Home</a></li>
             <li><a href="room.html">Rooms</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html"class="nav-book-btn">Book Now</a></li>
+            <li><a href="contact.html" >Contact</a></li>
         </ul>
     </nav>
 
@@ -94,21 +99,13 @@
         <a href="booking.html" class="cta-book-btn">BOOK NOW</a>
 
         <div class="contact-info-row">
-            <div class="info-item">
-                <span class="icon-circle">📞</span>
-                <span>+91-6206832599</span>
-            </div>
-            <div class="info-item">
-                <span class="icon-circle">📍</span>
-                <span>Behind Karmapa Temple, Bodhgaya-824231</span>
-            </div>
-            <div class="info-item">
-                <span class="icon-circle">✉️</span>
-                <span>info@grandhorizon.com</span>
-            </div>
+            <div class="info-item"><span class="icon-circle">📞</span><span>+91-6206832599</span></div>
+            <div class="info-item"><span class="icon-circle">📍</span><span>Behind Karmapa Temple, Bodhgaya-824231</span></div>
+            <div class="info-item"><span class="icon-circle">✉️</span><span>info@grandhorizon.com</span></div>
         </div>
     </div>
 </section>
+<script src="script.js"></script>
 <style>
         .booking-page {
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1350');
@@ -192,10 +189,6 @@
             background: #bc8a5f;
         }
 
-        @media (max-width: 600px) {
-            .form-grid { grid-template-columns: 1fr; }
-            .full-width { grid-column: span 1; }
-        }
         /* Pre-Footer CTA Section */
 .pre-footer {
     position: relative;
@@ -283,6 +276,46 @@
     padding: 60px 20px;
     text-align: center;
     color: #fff;
+}
+
+/* --- Desktop: Hide the menu toggle --- */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* --- Mobile Rules --- */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Show the button on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Keep it hidden by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust based on your nav height */
+        left: 0;
+        width: 100%;
+        background-color: rgba(75, 69, 69, 0.95);
+        padding: 20px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    /* This class will be added by JavaScript */
+    .nav-links.active {
+        display: flex; 
+    }
 }
 </style>
 </body>

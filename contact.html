@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <nav style="background: #333; position: relative;">
         <div class="logo">Grand Horizon</div>
-        <ul class="nav-links">
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-list">
             <li><a href="front.html">Home</a></li>
             <li><a href="room.html">Rooms</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html"class="nav-book-btn">Book Now</a></li>
+            <li><a href="contact.html" >Contact</a></li>
         </ul>
     </nav>
+    
 
     <div class="contact-container">
         <h2 style="text-align: center; margin-bottom: 40px;">Get In Touch</h2>
@@ -77,6 +82,7 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </section>
 <style>
         .contact-container {
@@ -250,6 +256,45 @@
     text-align: center;
     color: #fff;
 }
-    </style>
+/* --- Desktop: Hide the menu toggle --- */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* --- Mobile Rules --- */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Show the button on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Keep it hidden by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust based on your nav height */
+        left: 0;
+        width: 100%;
+        background-color: rgba(75, 69, 69, 0.95);
+        padding: 20px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    /* This class will be added by JavaScript */
+    .nav-links.active {
+        display: flex; 
+    }
+}
+ </style>
 </body>
 </html>

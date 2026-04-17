@@ -14,3 +14,10 @@ function checkAvailability() {
         alert("Searching for rooms from " + checkin + " to " + checkout + " for " + guests + "...");
     }
 }
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.getElementById('nav-list');
+
+mobileMenu.addEventListener('click', () => {
+    // This 'toggles' the .active class we created in CSS
+    navLinks.classList.toggle('active');
+});
