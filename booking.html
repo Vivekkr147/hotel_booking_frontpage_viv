@@ -34,16 +34,16 @@
                 <div class="form-grid">
                     <div class="form-group">
                         <label>From Date</label>
-                        <input type="date" required id="fromDate">
+                        <input type="date" required id="fromDate" name="fromDate">
                     </div>
                     <div class="form-group">
                         <label>To Date</label>
-                        <input type="date" required id="toDate">
+                        <input type="date" required id="toDate" name="toDate">
                     </div>
 
                     <div class="form-group">
                         <label>Room Type</label>
-                        <select required>
+                        <select required name="roomType">
                             <option value="">Select Room</option>
                             <option>Deluxe Suite</option>
                             <option>Executive Room</option>
@@ -52,7 +52,7 @@
                     </div>
                     <div class="form-group">
                         <label>Room Requirement</label>
-                        <select>
+                        <select name="roomRequirement">
                             <option>Single Bed</option>
                             <option>Double Bed</option>
                             <option>Extra Bed Needed</option>
@@ -61,29 +61,29 @@
 
                     <div class="form-group">
                         <label>Adults</label>
-                        <input type="number" min="1" value="1">
+                        <input type="number" min="1" value="1" name="adults">
                     </div>
                     <div class="form-group">
                         <label>Children</label>
-                        <input type="number" min="0" value="0">
+                        <input type="number" min="0" value="0" name="children">
                     </div>
 
                     <div class="form-group">
                         <label>Full Name</label>
-                        <input type="text" placeholder="Enter your name" required>
+                        <input type="text" placeholder="Enter your name" required name="fullName">
                     </div>
                     <div class="form-group">
                         <label>Email Address</label>
-                        <input type="email" placeholder="example@mail.com" required>
+                        <input type="email" placeholder="example@mail.com" required name="email">
                     </div>
                     <div class="form-group full-width">
                         <label>Phone Number</label>
-                        <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+                        <input type="tel" placeholder="+91 XXXXX XXXXX" required name="phone">
                     </div>
 
                     <div class="form-group full-width">
                         <label>Special Requirements / Requests</label>
-                        <textarea rows="4" placeholder="Any specific needs? (e.g., Airport pickup, Late check-in)"></textarea>
+                        <textarea rows="4" placeholder="Any specific needs? (e.g., Airport pickup, Late check-in)" name="specialRequests"></textarea>
                     </div>
                 </div>
 

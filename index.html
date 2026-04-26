@@ -1,11 +1,112 @@
-<html>
-    <head>
-        <script>
-            window.location.href = "front.html";
-        </script>
-    </head>
-    
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Horizon Hotel | Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    </body>
+    <nav>
+        <div class="logo">Grand Horizon</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="room.html">Room</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <!-- <li><a href="admin.html" class="nav-book-btn">Admin</a></li> -->
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Experience Luxury</h1>
+        <p>Your home away from home, refined and redefined.</p>
+
+        <div class="booking-container">
+            <div class="input-group">
+                <label>CHECK-IN</label>
+                <input type="date" id="checkin">
+            </div>
+            <div class="input-group">
+                <label>CHECK-OUT</label>
+                <input type="date" id="checkout">
+            </div>
+            <div class="input-group">
+                <label>GUESTS</label>
+                <select id="guests">
+                    <option selected>0 Guest</option>
+                    <option>1 Guest</option>
+                    <option >2 Guests</option>
+                    <option>3+ Guests</option>
+                </select>
+            </div>
+            <button class="book-btn" onclick="checkAvailability()">CHECK ROOMS</button>
+        </div>
+    </header>
+    <section class="overview">
+    <div class="overview-content">
+        <div class="overview-text">
+            <h2>Welcome to Grand Horizon</h2>
+            <h3>A Legacy of Luxury Since 1995</h3>
+            <p>
+                A Symbol of Unique architecture, Grand Horizon Hotel stands tall behind Karmapa 
+                Mandir in Bodhgaya "The World Heritage" site. The hotel caters to the diversified
+                needs of tourists from France, Thailand, Taiwan, Sri Lanka, Korea, China, Japan 
+                and other International tourists as well as domestic leisure travelers. Bodhgaya 
+                is unique for its Buddhist pilgrimage tours. The Hotel has 27 A/C rooms with all 
+                the modern amenities. "Grand Horizon Hotel" Restaurant serves Indian, Chinese, Continental, 
+                Tandoori, Thai food and much more...! In order to provide comfort to our esteemed guests,
+                the entire hotel has been specially designed to cater various needs. Furniture, 
+                Restaurant, Room Service, Bathrooms and all other amenities are desinged to meet
+                the customer needs.
+            </p>
+            <div class="stats">
+                <div class="stat-item">
+                    <span>200+</span>
+                    <p>Luxury Rooms</p>
+                </div>
+                <div class="stat-item">
+                    <span>15+</span>
+                    <p>Years Excellence</p>
+                </div>
+                <div class="stat-item">
+                    <span>5</span>
+                    <p>Global Awards</p>
+                </div>
+            </div>
+            <a href="rooms.html" class="btn-secondary">Explore More</a>
+        </div>
+        <div class="overview-image">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600" alt="Hotel Interior">
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+
+    <section class="pre-footer">
+    <div class="cta-overlay">
+        <h2>Want A ROOM ? Want A SEAT?</h2>
+        <p>You can book your room online or reserve a seat for dinner in our restaurant. So do not wait, book your room now!</p>
+        
+        <a href="booking.html" class="cta-book-btn">BOOK NOW</a>
+
+        <div class="contact-info-row">
+            <div class="info-item">
+                <span class="icon-circle">📞</span>
+                <span>+91-6206832599</span>
+            </div>
+            <div class="info-item">
+                <span class="icon-circle">📍</span>
+                <span>Behind Karmapa Temple, Bodhgaya-824231</span>
+            </div>
+            <div class="info-item">
+                <span class="icon-circle">✉️</span>
+                <span>info@grandhorizon.com</span>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
 </html>

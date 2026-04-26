@@ -1,0 +1,27 @@
+{
+  "bookings": [
+    {
+      "id": "GH0001",
+      "fromDate": "2026-04-28",
+      "toDate": "2026-04-30",
+      "roomType": "Presidential Suite",
+      "roomRequirement": "Single Bed",
+      "adults": 1,
+      "children": 0,
+      "fullName": "gautam",
+      "email": "gautam@gmail.com",
+      "phone": "6582659452",
+      "specialRequests": "",
+      "status": "confirmed",
+      "createdAt": "2026-04-26T09:52:52.983Z",
+      "totalAmount": 30000
+    }
+  ],
+  "lastBookingId": 0,
+  "metadata": {
+    "hotelName": "Grand Horizon Hotel",
+    "location": "Behind Karmapa Temple, Bodhgaya-824231, Bihar, India",
+    "contact": "+91-6206832599",
+    "email": "info@grandhorizon.com"
+  }
+}
